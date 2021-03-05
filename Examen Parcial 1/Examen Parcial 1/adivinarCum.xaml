@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Examen_Parcial_1.adivinarCum"
+             Title="Regresar"
+             BackgroundColor="BurlyWood">
+    
+    <ContentPage.Content>
+        <StackLayout           
+            Orientation="Vertical"    
+            VerticalOptions="Center"   
+            HorizontalOptions="Center">
+
+            <Label Text="Bienvenido al juego."
+               HorizontalTextAlignment="Center"
+               Margin="0, 0, 0, 15"
+               FontSize="Large"
+               FontAttributes="Bold"/>
+
+            <Label Text="Piensa en el día de tu cumpleaños, realiza lo que indica el botón y luego ¡TÓCALO!"
+               HorizontalTextAlignment="Center"
+               Margin="0, 0, 0, 15"
+               FontSize="Subtitle"
+               FontAttributes="Bold"/>
+
+            <Label Text="*Recomendación: utilizar una calculadora para realizar los cálculos correctamente."
+               HorizontalTextAlignment="Center"
+               FontSize="Small"
+               FontAttributes="Italic"/>
+
+            <Button x:Name="Btn"
+                Text="Multiplícalo por 20"
+                Margin="0, 20"
+                Clicked="Button_Clicked"
+                HorizontalOptions="Center"/>
+
+            <Button x:Name="Btn1"
+                Text="Súmale 73"
+                Margin="0, 20"
+                Clicked="Button_Clicked_1"
+                HorizontalOptions="Center"
+                IsVisible="False"/>
+
+            <Button  x:Name="Btn2"
+                Text="Multiplícalo por 5"
+                Margin="0, 20"
+                Clicked="Button_Clicked_2"
+                HorizontalOptions="Center"
+                IsVisible="False"/>
+
+            <Button  x:Name="Btn3"
+                Text="Súmale tu mes"
+                Margin="0, 20"
+                Clicked="Button_Clicked_3"
+                HorizontalOptions="Center"
+                IsVisible="False"/>
+
+            <Label x:Name="lbl"
+               Text="Ingresa el resultado"
+               HorizontalTextAlignment="Center"
+               Margin="0, 0, 0, 15"
+               FontSize="Small"
+               FontAttributes="Bold"
+               IsVisible="False"/>
+            
+            <Entry  x:Name="Resultado"
+                Placeholder="Resultado"
+                Margin="0, 20"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                IsVisible="False"/>
+            
+            <Button  x:Name="Btn4"
+                Text="Adivinar"
+                Margin="0, 20"
+                Clicked="Btn4_Clicked"
+                HorizontalOptions="Center"
+                IsVisible="False"/>
+
+            <Label x:Name="lbl1"
+               Text="Tu día es:"
+               HorizontalTextAlignment="Center"
+               FontSize="Small"
+               FontAttributes="Bold"
+               IsVisible="False"/>
+            
+            <Entry  x:Name="Dia"
+                Placeholder="Dia"
+                Margin="0, 10"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                IsVisible="False"/>
+
+            <Label x:Name="lbl2"
+               Text="Tu mes es:"
+               HorizontalTextAlignment="Center"
+               FontSize="Small"
+               FontAttributes="Bold"
+               IsVisible="False"/>
+
+            <Entry  x:Name="Mes"
+                Placeholder="Mes"
+                Margin="0, 10"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                IsVisible="False"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

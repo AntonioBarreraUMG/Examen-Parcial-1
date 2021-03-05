@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Examen_Parcial_1.adivinarNum"
+             Title="Regresar"
+             BackgroundColor="BurlyWood">
+
+    <ContentPage.Content>
+
+        <StackLayout           
+            Orientation="Vertical"    
+            VerticalOptions="Center"   
+            HorizontalOptions="Center">
+
+            <Label Text="Bienvenido al juego. Por favor, sigue mis instrucciones."
+               HorizontalTextAlignment="Center"
+               Margin="0, 0, 0, 15"
+               FontSize="Large"
+               FontAttributes="Bold"/>
+            <Label Text="*Recomendación: utilizar una calculadora para realizar los cálculos correctamente."
+               HorizontalTextAlignment="Center"
+               Margin="0, 10"
+               FontSize="Small"
+               FontAttributes="Italic"/>
+            <Label Text="1. Piensa en un número."
+               Margin="0, 15"
+               FontSize="Subtitle"
+               FontAttributes="Bold"/>
+        <Label Text="2. Multiplícalo por 2."
+               Margin="0, 15"
+               FontSize="Subtitle"
+               FontAttributes="Bold"/>
+        <Label Text="3. Súmale 8."
+               Margin="0, 15"
+               FontSize="Subtitle"
+               FontAttributes="Bold"/>
+        <Label Text="4. Multiplícalo por 5."
+               Margin="0, 15"
+               FontSize="Subtitle"
+               FontAttributes="Bold"/>
+        <Label Text="5. Ahora, ingresa el resultado y toca ¨Adivinar¨."
+               Margin="0, 15, 0, 20"
+               FontSize="Subtitle"
+               FontAttributes="Bold"/>
+
+        <Entry  x:Name="Resultado"
+                Placeholder="Resultado"
+                Margin="0, 20"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"/>
+
+        <Button Text="Adivinar"
+                Margin="0, 20"
+                Clicked="Button_Clicked"
+                HorizontalOptions="Center"/>
+
+        <Entry  x:Name="Respuesta"
+                Placeholder="Respuesta"
+                Margin="0, 20"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Examen_Parcial_1.MainPage"
+             Title="* * * * * * * * *Juegos mágicos* * * * * * * * *"
+             BackgroundColor="BurlyWood">
+
+    <StackLayout
+        Orientation="Vertical"
+        VerticalOptions="CenterAndExpand"
+        HorizontalOptions="CenterAndExpand">
+
+        <Label Text="Elija un juego"
+               HorizontalTextAlignment="Center"
+               FontSize="Large"
+               FontAttributes="Bold"
+               Margin="15"/>
+
+        <Button x:Name="botonNum" 
+                Clicked="botonNum_Clicked"
+                Text="Adivinar Número"
+                Margin="15"/>
+        
+        <Button x:Name="botonCum"
+                Clicked="botonCum_Clicked"
+                Text="Adivinar Cumpleaños"
+                Margin="15"/>
+    </StackLayout>
+
+</ContentPage>
